@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+label{
+    margin: 2vw;
+    display: inline-block;
+}
+.screen{
+    padding: 1vw 1vh;
+    width: 40vw;
+    height: 90vh;
+    margin: 4vh 4vw;
+    display: inline-block;
+}
+html{
+    background-color: #ffd900;
+    width: 100%;
+    height: 100%;
+}
+.input-screen{
+    background-color: inherit;
+    float: left;
+}
+.output-screen{
+    background-color: #3a3a3a;
+    padding: 1vw;
+    border-radius: 25px;
+    float: right;
+    color: antiquewhite;
+}
