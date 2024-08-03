@@ -3,6 +3,10 @@
     margin: 0;
     font-family: "Droid Sans Mono", "Noto Sans Mono", Monospaced, monospace;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 label{
     margin: 2vw;
     display: inline-block;
@@ -34,6 +38,7 @@ html{
 #output, #textspan {
     margin: 1vw;
     overflow: hidden;
+    width: 30em;
 }
 
 #submit {
