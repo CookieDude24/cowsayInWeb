@@ -6,15 +6,16 @@
     <title>cowsay</title>
 </head>
 <body>
+<script src="script.js"></script>
     <div class="main">
-        <div class="input-screen screen">
+        <div class="input-screen screen" onClick="makeCow();">
             <h1>cowsay character generator</h1>
-            <form method="GET">
                 <div class="text-input">
                     <h3>message that is displayed</h3>
                     <label>
                         message:
-                        <input name="message" type="text" placeholder="Typical cowsay output!">
+                        <input id="message" name="message" oninput="makeCow()"
+                               placeholder="Typical cowsay output!" type="text">
                     </label>
                 </div>
                 <div class="cow-selector">
@@ -28,8 +29,8 @@
                         <input name="cow-skin" type="radio" value="coward">
                     </label>
                     <label>
-                        tux
-                        <input name="cow-skin" type="radio" value="tux">
+                        small
+                        <input name="cow-skin" type="radio" value="small">
                     </label>
                     <label>
                         duck
@@ -91,11 +92,10 @@
                         <input name="option" type="radio" value="tired">
                     </label>
                 </div>
-            </form>
-
         </div>
         <div class="output-screen screen">
-            servas
+            <p id="output">
+            </p>
         </div>
     </div>
 </body>
