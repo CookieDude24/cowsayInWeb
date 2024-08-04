@@ -44,6 +44,88 @@ function makeCow() {
         line = "o"
     }
 
+    let coward = `&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;,__,&nbsp;|&nbsp;&nbsp;&nbsp;|<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;(${eyes})\\|&nbsp;&nbsp;&nbsp;|___<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__)\\|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;)\\_<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${tongue}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|_w&nbsp;|&nbsp;&nbsp;\\<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;*<br><br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cower....`
+    let defaultcow = `&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;^__^<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;(${eyes})\\_________<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__)\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)\\/\\<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${tongue}&nbsp;&nbsp;&nbsp;||----w&nbsp;|<br>` +
+        `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;<br><br>`
+    let small = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;,__,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;(${eyes})____<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__)&nbsp;&nbsp;&nbsp;&nbsp;)\\<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${tongue}&nbsp;||--||&nbsp;*<br>`
+    let supermilker = `
+&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;^__^<br>
+&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;(${eyes})\\_______&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(__)\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)\\/\\&nbsp;&nbsp;&nbsp;&nbsp;|Super&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${tongue}&nbsp;&nbsp;||----W&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Milker|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;UDDDDDDDDD|______|`
+    let flamingsheep = `&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;.&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\`&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;&nbsp;.;&nbsp;.&nbsp;&nbsp;:&nbsp;.'&nbsp;:&nbsp;&nbsp;:&nbsp;&nbsp;:&nbsp;.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;i..\`:&nbsp;i\`&nbsp;i.i.,i&nbsp;&nbsp;i&nbsp;.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;\`,--.|i&nbsp;|i|ii|ii|i:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U${eyes}U\\.'@@@@@@\`.||'&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\__/(@@@@@@@@@@)'&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(@@@@@@@@)&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\`YY~~~~YY'&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;||<br>`
+    let headin = `<a href="https://www.southpark.de/en/video-clips/mqk1s7/south-park-you-didn-t-read-it" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;${line}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${line}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;^__^&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(${eyes})\\_______/&nbsp;&nbsp;_________<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(__)\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)=(&nbsp;&nbsp;____|_&nbsp;\\_____<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${tongue}&nbsp;&nbsp;||----w&nbsp;|&nbsp;&nbsp;\\&nbsp;\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_____&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||</a>`
+    let hellokitty = `<a href="https://m.media-amazon.com/images/I/71nXKEktZXL._AC_UF894,1000_QL80_.jpg" target="_blank">&nbsp;&nbsp;${line}<br>
+&nbsp;&nbsp;&nbsp;${line}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\\_)o<<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;O&nbsp;.&nbsp;O|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\_____/</a>`
+    let milk = `&nbsp;${line}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;____________&nbsp;<br>
+&nbsp;&nbsp;${line}&nbsp;&nbsp;&nbsp;&nbsp;|__________|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\\<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;\\<br>
+&nbsp;&nbsp;&nbsp;&nbsp;/___________/___/|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;==\\&nbsp;/==&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;|&nbsp;\\&nbsp;\\&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;\\&nbsp;\\|<br>
+&nbsp;&nbsp;&nbsp;/|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;\\&nbsp;\\<br>
+&nbsp;&nbsp;/&nbsp;|&nbsp;&nbsp;\\_____/&nbsp;|&nbsp;&nbsp;&nbsp;/&nbsp;/<br>
+&nbsp;/&nbsp;/|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;/&nbsp;/|<br>
+/||\\|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;/||\\/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;-------------|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;|<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<__/&nbsp;&nbsp;&nbsp;&nbsp;\\__>`
+
+    if (skin === "coward")
+        cow = coward
+    else if (skin === "cow")
+        cow = defaultcow;
+    else if (skin === "small")
+        cow = small
+    else if (skin === "supermilker")
+        cow = supermilker
+    else if (skin === "flamingsheep")
+        cow = flamingsheep
+    else if (skin === "headin")
+        cow = headin
+    else if (skin === "hellokitty") {
+        supportAdditionalOptions = false
+        cow = hellokitty
+    } else if (skin === "milk") {
+        supportAdditionalOptions = false
+        cow = milk
+    }
+
+
     if (message === "")
         message = "Typical cowsay output!"
 
